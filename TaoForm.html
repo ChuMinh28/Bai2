@@ -5,20 +5,15 @@
     <title>TaoForm</title>
 </head>
 <body>
+<form action="/Profile.html" method="post">
+    <fieldset style="width:500px; border:10px">
 <h1>SỞ THÍCH CỦA BẠN</h1>
-<style>
-  h1 {
-    text-align:center;
-    background-color: tomato;
-    color: whitesmoke;
-  }
-</style>
 <span>Họ và tên</span>
 <input type="text" name="yourname"><br>
 <br>
 <span>Email</span>
-<input type="text" name="email">
-<p>Sở thích:</p>
+<input type="text" style="margin-left: 24px" name="email"><br>
+<label>Sở thích:</label> <class>
     <input type="checkbox" name="hobby" value="the thao"> thể thao
     <input type="checkbox" name="hobby" value="am nhac"> âm nhạc
     <input type="checkbox" name="hobby" value="choi game">chơi game
@@ -26,15 +21,21 @@
     <input type="checkbox" name="hobby" value="luot web">lướt web
     <input type="checkbox" name="hobby" value="doc sach">dọc sách
     <input type="checkbox" name="hobby" value="dien anh">điện ảnh
+    </class>
 <br>
 <input type="Submit" value="submit">
 <input type="Reset" value="reset">
+    </fieldset>
+</form>
 <style>
+    fieldset {
+        width:50%;
+    }
     span {
         color: deeppink;
     }
     h1 {
-        width:50%;
+        width:100%;
     }
 </style>
 </body>
